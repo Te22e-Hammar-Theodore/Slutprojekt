@@ -142,8 +142,7 @@ footer {
   border-radius: 1rem;
 }
 
-.kundvagnSida h3,
-p {
+.kundvagnSida h3 p {
   text-align: center;
   font-weight: bold;
 }
