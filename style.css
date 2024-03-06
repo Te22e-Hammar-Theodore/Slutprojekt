@@ -17,9 +17,18 @@ nav {
 }
 
 .kundvagn {
+  display: flex;
+  flex-direction: row;
   margin-left: auto;
   background-color: white;
-  border-radius: 10rem;
+  border-radius: 4rem;
+  height: fit-content;
+}
+
+.kundvagn-p {
+  font-size: 2rem;
+  margin-top: 4.5rem;
+  padding-left: 2rem;
 }
 
 article img {
@@ -103,6 +112,10 @@ footer {
     margin-bottom: 0rem;
   }
 
+  .kundvagn-p {
+    display: none;
+  }
+
   aside {
     display: none;
   }
@@ -134,7 +147,7 @@ footer {
     display: flex;
     align-items: center;
     height: 4rem;
-    margin-top: 6%;
+    margin-top: 5%;
     border: none;
     background-color: transparent;
   }
@@ -195,7 +208,7 @@ footer {
     display: flex;
     align-items: center;
     height: 4rem;
-    margin-top: 6%;
+    margin-top: 5%;
     border: none;
     background-color: transparent;
   }
