@@ -37,6 +37,11 @@ article img {
   border-radius: 1rem;
 }
 
+article p {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
 .cucumba_img {
   border-radius: 2rem;
 }
@@ -236,7 +241,7 @@ footer {
     font-family: "Luckiest Guy", serif;
   }
 
-  aside h2 {
+  aside h1 {
     text-align: center;
     font-size: 3rem;
     margin-top: 1rem;
