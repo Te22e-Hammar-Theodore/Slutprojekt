@@ -5,6 +5,8 @@ const totalPrisHTML = document.querySelector(".dropdown >p");
 let totalPris = 0;
 
 function uppdateraKundvagn() {
+  Produkter.innerHTML = "";
+  totalPris = 0;
   for (let index = 0; index < kundvagn.length; index++) {
     const Namn = document.createElement("p");
     Namn.innerHTML = kundvagn[index].namn;
@@ -16,9 +18,9 @@ function uppdateraKundvagn() {
     productHtml.appendChild(Namn);
     productHtml.appendChild(Pris);
     Produkter.appendChild(productHtml);
-
-    totalPrisHTML.innerHTML = "Summa: " + totalPris + " kr";
+    totalPris += kundvagn[index].pris;
   }
+  totalPrisHTML.innerHTML = "Summa: " + totalPris + " kr";
 }
 
 function LäggTillIKundvagn(namn, pris) {
@@ -29,19 +31,20 @@ function LäggTillIKundvagn(namn, pris) {
   kundvagn.push(produkt);
   /* alert(JSON.stringify(kundvagn)); */
 
-  totalPris += pris;
-
   localStorage.setItem("kundvagn", JSON.stringify(kundvagn));
-  localStorage.setItem("Totala-Priset", totalPris);
   uppdateraKundvagn();
 }
 
 function rensaKundvagn() {
-  totalPris = 0;
   kundvagn = [];
   localStorage.clear();
   uppdateraKundvagn();
 }
+
 kundvagn = JSON.parse(localStorage.getItem("kundvagn"));
-totalPris = parseInt(localStorage.getItem("Totala-Priset"));
+
+if (kundvagn === null) {
+  kundvagn = [];
+}
+
 uppdateraKundvagn();

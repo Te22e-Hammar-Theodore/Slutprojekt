@@ -128,6 +128,15 @@ footer {
   margin: 0.5rem;
 }
 
+.dropdown {
+  width: 30%;
+  margin-left: 2rem;
+}
+
+.dropdown ul {
+  padding-left: 0%;
+}
+
 /* Stilregler för mobil */
 @media only screen and (max-width: 767px) {
   .huvudsida h2 {
@@ -185,6 +194,7 @@ footer {
   main {
     margin: 0.25rem;
     padding: 0.5rem;
+    margin-left: auto;
   }
 
   .artikelsamling {
