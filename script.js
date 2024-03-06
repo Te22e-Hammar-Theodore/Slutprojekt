@@ -1,7 +1,7 @@
 let kundvagn = [];
 
-const Produkter = document.querySelector(".dropdown ul");
-const totalPrisHTML = document.querySelector(".dropdown >p");
+const Produkter = document.querySelector(".kundvagnSida ul");
+const totalPrisHTML = document.querySelector(".kundvagnSida >p");
 let totalPris = 0;
 
 function uppdateraKundvagn() {
