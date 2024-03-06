@@ -1,0 +1,162 @@
+body {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 100%;
+}
+
+.huvudsida {
+  display: flex;
+  flex-direction: row;
+}
+
+.huvudsida img {
+  height: 25vw;
+}
+
+nav {
+  background-color: #b9ffc8;
+}
+
+nav img {
+  padding: 1rem;
+}
+
+article img {
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+article h2 {
+  font-weight: bold;
+}
+
+article button {
+  width: 80%;
+  height: 4rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ff9595;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  background-color: white;
+}
+
+.artikelsamling {
+  background-color: #b9ffc8;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+main {
+  padding: 2vw;
+  margin: 2vw;
+}
+
+article p {
+  text-align: center;
+}
+
+footer {
+  background-color: #b9ffc8;
+}
+
+.sidinfo {
+  background-color: #b9ffc8;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  background-color: #b9ffc8;
+}
+
+/* Stilregler för mobil */
+@media only screen and (max-width: 767px) {
+  .huvudsida h2 {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+  }
+
+  aside {
+    display: none;
+  }
+
+  header button {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    margin: 7.5% 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+/* Stilregler för surfplattor */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .huvudsida {
+  }
+
+  .artikelsamling {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  aside {
+    margin: 2rem;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    width: 30%;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  footer {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+}
+
+/* Stilregler för dator */
+@media only screen and (min-width: 1025px) {
+  .artikelsamling {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  aside {
+    margin: 2rem;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    width: 30%;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  aside li {
+    margin: 2rem;
+    margin-left: 0%;
+  }
+
+  aside h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+}
