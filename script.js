@@ -5,5 +5,6 @@ function LäggTillIKundvagn(namn, pris) {
     namn: namn,
     pris: pris,
   };
-  kundvagn.push(produkt); alert
+  kundvagn.push(produkt);
+  alert(JSON.stringify(kundvagn));
 }

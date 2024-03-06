@@ -19,10 +19,18 @@ nav {
 .kundvagn {
   display: flex;
   flex-direction: row;
-  margin-left: auto;
+
   background-color: white;
   border-radius: 4rem;
   height: fit-content;
+}
+
+.kundvagn-knapp {
+  margin-left: auto;
+}
+
+.kundvagn-knapp:hover{
+  cursor: pointer;
 }
 
 .kundvagn-p {
